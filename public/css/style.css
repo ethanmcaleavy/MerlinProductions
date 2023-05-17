@@ -2,6 +2,12 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+@font-face {
+    font-family: 'lemonMilk';
+    src: url('../fonts/lemonMilk/lemonmilk-light-webfont.woff') format('woff'),
+         url('../fonts/lemonMilk/lemonmilk-light-webfont.woff2') format('woff2')
+}
+
 .posterSection {
   display: flex;
   flex-wrap: wrap;
@@ -30,3 +36,94 @@ body {
     height: 0;
 }
 
+.footer {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.titleHome h1 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.introText {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    font-size: 40%;
+    font-family:'Gill Sans';
+}
+
+br
+{
+    content: " " !important;
+    display: block !important;
+    margin: 2%;
+}
+
+hr {
+    color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 5px;
+    background-color: #ffffff; /* Set the background color to red */
+    border: none;
+}
+.homePhotos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bwphotos {
+    max-width: 10%;
+    filter: grayscale(100%) contrast(115%);
+    margin: 1.5%;  
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2% 5%;
+    text-decoration: none;
+    font-size: 90%;
+    transition: background-color 0.4s;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color:rgb(0, 0, 0);
+  }
+
+  .topnav a.left {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .topnav a.right {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  
