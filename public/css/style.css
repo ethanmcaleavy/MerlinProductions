@@ -8,6 +8,8 @@ body {
          url('../fonts/lemonMilk/lemonmilk-light-webfont.woff2') format('woff2')
 }
 
+.navbar
+
 .posterSection {
   display: flex;
   flex-wrap: wrap;
@@ -24,11 +26,19 @@ body {
     justify-content: center;
     margin: 3% 6%;  
     column-gap: 5%;
+    font-size: 300%;
+    font-family:helvetica;
 }
 
 .poster {
     flex-basis: 22%;
     max-width: 22%;
+    transition: transform 0.4s ease-out;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
 }
 
 .break {
@@ -46,6 +56,7 @@ body {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    font-family: verdana;
     margin-top: 5%;
 }
 
@@ -54,7 +65,7 @@ body {
     justify-content: center;
     text-align: center; 
     font-size: 40%;
-    font-family:'Gill Sans';
+    font-family:verdana;
 }
 
 br
@@ -68,23 +79,63 @@ hr {
     color: white;
     margin-left: 6%;
     margin-right: 6%;
-    height: 5px;
+    height: 2px;
     background-color: #ffffff; /* Set the background color to red */
     border: none;
 }
-.homePhotos {
+
+/*The process Page*/
+
+
+.processes {
+  display: flex; 
+  align-items:center;
+  justify-content: center;
+  column-gap: 5%;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 250%;
+  font-family:helvetica;
+}
+
+.processImage {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .processImage4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  
-  .bwphotos {
-    max-width: 10%;
+
+  .bwphotos4 {
+    width: 35%;
     filter: grayscale(100%) contrast(115%);
-    margin: 1.5%;  
+    margin: 3%;  
+    border-radius: 30px;
   }
 
+.processText {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  flex-shrink: 2;
+}
+  
+  .bwphotos {
+    width: 50%;
+    filter: grayscale(100%) contrast(115%);
+    margin-bottom: 10%;  
+    border-radius: 30px;
+  }
 /* Add a black background color to the top navigation */
 .topnav {
     display: flex;
@@ -92,6 +143,11 @@ hr {
     justify-content: center;
     background-color: #000000;
     overflow: hidden;
+    font-family: verdana;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
   
   /* Style the links inside the navigation bar */

@@ -14,6 +14,9 @@ server.get('/projects', (req, res) => {
     res.render('pages/projects')
 })
 
+server.get('/process', (req, res) => {
+  res.render('pages/process')
+})
 
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`)
