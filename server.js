@@ -10,6 +10,11 @@ server.get('/', (req, res) => {
     res.render('pages/home')
 })
 
+server.get('/projects', (req, res) => {
+    res.render('pages/projects')
+})
+
+
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`)
 })
