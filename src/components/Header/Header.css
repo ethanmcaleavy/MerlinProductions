@@ -11,7 +11,7 @@
 header {
     font-family: 'MagicHat';    
     display: flex;
-    font-size: 150%;
+    font-size: 75%;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
 }
