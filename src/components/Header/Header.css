@@ -1,17 +1,7 @@
-@font-face {
-    font-family: 'MagicHat';
-    src: local('MagicHat'), 
-            url('../../assets/fonts/MagicHat.ttf') format('truetype'),
-            url('../../assets/fonts/MagicHat.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-header {
-    font-family: 'MagicHat';    
-    display: flex;
-    font-size: 75%;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.4%;
+    width: 7%;
+  }
