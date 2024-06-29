@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import BanitoStill from '../assets/images/BanitoStill.jpg';
-import MMStill from '../assets/images/MMStill.jpg';
+import BanitoStill from '../../assets/images/BanitoStill.jpg';
+import MMStill from '../../assets/images/MMStill.jpg';
 import './Carousel.css';
 
 const images = [

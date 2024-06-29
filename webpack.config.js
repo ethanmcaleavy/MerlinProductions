@@ -31,15 +31,17 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(ttf|woff|woff2|eot|svg)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-          },
-        },
-      },
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts/'
+                }
+            }
+        ]
+    } ,
       {
         test: /\.(jpg|jpeg|png|gif)$/,
         use: {
