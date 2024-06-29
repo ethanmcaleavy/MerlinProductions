@@ -1,12 +1,15 @@
 @font-face {
-    font-family: 'Magic Hat';
-    src: url('../../assets/fonts/MagicHat.ttf') format('truetype');
+    font-family: 'MagicHat';
+    src: local('MagicHat'), 
+            url('../../assets/fonts/MagicHat.ttf') format('truetype'),
+            url('../../assets/fonts/MagicHat.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+
 header {
-    font-family: 'Magic Hat', sans-serif;
+    font-family: 'MagicHat';    
     display: flex;
     font-size: 150%;
     justify-content: center; /* Centers horizontally */
